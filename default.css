@@ -816,6 +816,7 @@ select::-ms-expand {
           box-sizing: border-box;
   line-height: 1;
   position: relative;
+  min-width: 131px;
 }
 
 .footer .lang-container::before {
@@ -853,7 +854,6 @@ select::-ms-expand {
   height: 100%;
   text-align: center;
   z-index: 1;
-  min-width: 129px;
 }
 
 .footer .lang-container select#lang-switcher-footer option {
@@ -876,6 +876,12 @@ select::-ms-expand {
 @media (max-width: 1280px) {
   * {
     word-break: keep-all;
+  }
+  .main-usage__item__text h2 {
+    font-size: 3rem;
+  }
+  .main-usage__item__text br {
+    display: none;
   }
   .main-usage__item > .inner {
     display: block;
@@ -923,6 +929,13 @@ select::-ms-expand {
     display: block;
     margin: 0 auto;
     border-radius: 3px;
+  }
+  .main-faq__list li button.main-faq__ques {
+    font-size: 2rem;
+    height: 50px;
+  }
+  .main-faq__list li .main-faq__answ {
+    font-size: 1.8rem;
   }
   .footer__nav__list li {
     width: 50%;

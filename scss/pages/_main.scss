@@ -367,6 +367,7 @@ select::-ms-expand {
     box-sizing: border-box;
     line-height: 1;
     position: relative;
+    min-width: 131px;
     &::before{
       content:'language';
       @include font-ico;
@@ -398,7 +399,6 @@ select::-ms-expand {
       height: 100%;
       text-align: center;
       z-index: 1;
-      min-width: 129px;
       option{
         background:#333;
         color:#fff;
@@ -436,6 +436,14 @@ select::-ms-expand {
   *{
     word-break: keep-all;
   }
+  .main-usage__item__text{
+    h2{
+      font-size: 3rem;
+    }
+    br{
+      display: none;
+    }
+  }
   .main-usage__item > .inner{
     display: block;
     text-align: center;
@@ -470,6 +478,7 @@ select::-ms-expand {
   }
 }
 @include mq($from: m){
+  
   .main-mailform__area{
     display: block;
     input{
@@ -481,6 +490,13 @@ select::-ms-expand {
       margin:0 auto;
       border-radius: 3px;
     }
+  }
+  .main-faq__list li button.main-faq__ques{
+    font-size: 2rem;
+    height: 50px;
+  }
+  .main-faq__list li .main-faq__answ{
+    font-size: 1.8rem;
   }
   .footer__nav__list li{
     width:50%;
